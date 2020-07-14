@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Color Picker</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <h1>Color Picker</h1>
+    <h2>Escolha a cor</h2>
+
+    <div class="slidecontainer">
+      <table>
+        <tr>
+          <td>
+            <label for="red">Red</label>
+            <input
+              type="range"
+              min="1"
+              max="255"
+              value="50"
+              class="slider"
+              id="red"
+            />
+            <input type="text" readonly id="redBit" size="2" value="50" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="green">Green</label>
+            <input
+              type="range"
+              min="1"
+              max="255"
+              value="50"
+              class="slider"
+              id="green"
+            />
+            <input type="text" readonly id="greenBit" size="2" value="50" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="blue">Blue</label>
+            <input
+              type="range"
+              min="1"
+              max="255"
+              value="50"
+              class="slider"
+              id="blue"
+            /><input type="text" readonly id="blueBit" size="2" value="50" />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <div id="pickedcolor"></div>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <input type="text" readonly id="hexval" size="8" />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
